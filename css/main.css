@@ -242,6 +242,16 @@ body {
     transform: translateY(0);
 }
 
+@media (max-width: 760px) {
+    .burger span {
+        width: 20px;
+        height: 1px;
+        background-color: #fff;
+        margin: 2px 0;
+        transition: all 0.3s ease;
+    }
+}
+
 /*HEADER-END*/
 
 /*MAIN*/
@@ -294,14 +304,14 @@ body {
 }
 
 .hero__title {
-    width: 765px;
+    max-width: 765px;
     font-size: 70px;
     line-height: 93%;
     margin-top: 10px;
 }
 
 .hero__text {
-    width: 481px;
+    max-width: 481px;
     font-weight: 400;
     line-height: 156%;
     margin-top: 10px;
@@ -335,6 +345,92 @@ body {
     height: 375px;
     margin-top: 30px;
 }
+
+@media (max-width: 1024px) {
+    .hero__title {
+
+    }
+
+    .hero__img-bg {
+      width: 100%;
+      height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero__title {
+        max-width: 765px;
+        font-size: 50px;
+        line-height: 93%;
+        margin-top: 10px;
+    }
+
+    .hero {
+        min-height: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero__title {
+        max-width: 765px;
+        font-size: 50px;
+        line-height: 93%;
+        margin-top: 10px;
+    }
+
+    .hero {
+        min-height: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero__title {
+        max-width: 765px;
+        font-size: 50px;
+        line-height: 93%;
+        margin-top: 10px;
+    }
+
+    .hero {
+        min-height: 700px;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero__title {
+        max-width: 765px;
+        font-size: 30px;
+        line-height: 93%;
+        margin-top: 10px;
+    }
+
+    .hero__text {
+        font-size: 15px;
+        max-width: 481px;
+        font-weight: 300;
+        line-height: 156%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+}
+
+@media (max-width: 330px) {
+    .hero__title {
+        max-width: 765px;
+        font-size: 25px;
+        line-height: 93%;
+        margin-top: 10px;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+}
+
 
 /*hero-end*/
 
@@ -376,6 +472,14 @@ body {
     }
     100% {
         transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 460px) {
+    .brands {
+        padding: 5px 16px;
+        height: 52px;
+        background-color: #FF4262;
     }
 }
 /*brands-end*/
