@@ -15,13 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
       burger.classList.toggle('active');
   });
 });
-
 /*HEADER-END*/
-
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
-  spaceBetween: 30,
-});
 
 document.addEventListener('DOMContentLoaded', function() {
   const toggleHeaders = document.querySelectorAll('.toggle-header');

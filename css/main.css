@@ -485,6 +485,7 @@ body {
 /*brands-end*/
 
 /*about*/
+/* Общие стили */
 .about {
     min-height: 1482px;
 }
@@ -529,7 +530,7 @@ body {
 
 .unique-nfts__img {
     width: 536px;
-    height: 466px;  
+    height: 466px;
 }
 
 .secure__img {
@@ -563,7 +564,7 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
+
     border: 2px solid;
     border-image: #6d5eea;
     border-radius: 60px;
@@ -589,6 +590,204 @@ body {
         transform: translateX(10px);
     }
 }
+
+/* Смартфоны (320px и выше) */
+@media (max-width: 479px) {
+    .about {
+        min-height: auto;
+    }
+
+    .about__container {
+        padding: 0 10px;
+    }
+
+    .about__title {
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .about__subtitle {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .about__cart {
+        flex-direction: column;
+        align-items: center;
+        min-height: auto;
+    }
+
+    .unique-nfts__img, .secure__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about__content h3 {
+        font-size: 18px;
+    }
+
+    .about__content p:nth-child(2) {
+        font-size: 24px;
+    }
+
+    .about__content p:nth-child(3) {
+        font-size: 14px;
+    }
+
+    .about__content button {
+        padding: 10px 20px;
+    }
+
+    .about__img-bottom {
+        height: auto;
+    }
+}
+
+/* Планшеты (768px и выше) */
+@media (min-width: 768px) {
+    .about__container {
+        padding: 0 20px;
+    }
+
+    .about__title {
+        font-size: 32px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .about__subtitle {
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    .about__cart {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .unique-nfts__img, .secure__img {
+        width: 400px;
+        height: auto;
+    }
+
+    .about__content h3 {
+        font-size: 20px;
+    }
+
+    .about__content p:nth-child(2) {
+        font-size: 32px;
+    }
+
+    .about__content p:nth-child(3) {
+        font-size: 16px;
+    }
+
+    .about__content button {
+        padding: 15px 30px;
+    }
+
+    .about__img-bottom {
+        height: auto;
+    }
+}
+
+/* Нетбуки (1024px и выше) */
+@media (min-width: 1024px) {
+    .about__container {
+        padding: 0 30px;
+    }
+
+    .about__title {
+        font-size: 36px;
+        margin-top: 60px;
+        margin-bottom: 25px;
+    }
+
+    .about__subtitle {
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+
+    .about__cart {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .unique-nfts__img, .secure__img {
+        width: 450px;
+        height: auto;
+    }
+
+    .about__content h3 {
+        font-size: 22px;
+    }
+
+    .about__content p:nth-child(2) {
+        font-size: 36px;
+    }
+
+    .about__content p:nth-child(3) {
+        font-size: 18px;
+    }
+
+    .about__content button {
+        padding: 18px 35px;
+    }
+
+    .about__img-bottom {
+        height: auto;
+    }
+}
+
+/* Мониторы (1280px и выше) */
+@media (min-width: 1280px) {
+    .about__container {
+        padding: 0 40px;
+    }
+
+    .about__title {
+        font-size: 40px;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+
+    .about__subtitle {
+        font-size: 22px;
+        margin-bottom: 70px;
+    }
+
+    .about__cart {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .unique-nfts__img, .secure__img {
+        width: 500px;
+        height: auto;
+    }
+
+    .about__content h3 {
+        font-size: 24px;
+    }
+
+    .about__content p:nth-child(2) {
+        font-size: 40px;
+    }
+
+    .about__content p:nth-child(3) {
+        font-size: 20px;
+    }
+
+    .about__content button {
+        padding: 20px 40px;
+    }
+
+    .about__img-bottom {
+        height: auto;
+    }
+}
+
 /*about-end*/
 
 /*slider*/
