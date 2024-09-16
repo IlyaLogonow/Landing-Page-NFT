@@ -51,21 +51,30 @@ var swiper = new Swiper(".mySwiper", {
   
 /*SLIDER-END*/
 
+/*FAQ*/
 document.addEventListener('DOMContentLoaded', function() {
-  const toggleHeaders = document.querySelectorAll('.toggle-header');
-
-  toggleHeaders.forEach(header => {
-      header.addEventListener('click', function() {
-          const content = this.nextElementSibling;
-          const icon = this.querySelector('.toggle-icon');
-
-          if (content.classList.contains('show')) {
-              content.classList.remove('show');
-              icon.textContent = '+';
-          } else {
-              content.classList.add('show');
-              icon.textContent = '×';
-          }
-      });
+    const toggleHeaders = document.querySelectorAll('.toggle-header');
+  
+    toggleHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            const icon = this.querySelector('.toggle-icon');
+  
+            if (content.classList.contains('show')) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                content.classList.remove('show');
+                content.style.maxHeight = '0';
+                icon.textContent = '+';
+                this.classList.remove('active');
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                content.classList.add('show');
+                icon.textContent = '×';
+                this.classList.add('active');
+            }
+        });
+    });
   });
-});
+/*FAQ-END*/
+  
+  

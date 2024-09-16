@@ -1062,7 +1062,6 @@ body {
         font-size: 6px;
     }
 }
-
 /*slider-end*/
 
 /*faq*/
@@ -1075,16 +1074,16 @@ body {
 .faq__title {
     text-align: center;
     margin-bottom: 46px;
+}
 
-    h2 {
-        color: #FF4262;
-        font-size: 30px;
-        text-transform: uppercase;
-    }
+.faq__title h2 {
+    color: #FF4262;
+    font-size: 30px;
+    text-transform: uppercase;
+}
 
-    p {
-        font-size: 40px;
-    }
+.faq__title p {
+    font-size: 40px;
 }
 
 .faq__toggle-block {
@@ -1100,7 +1099,6 @@ body {
     width: 732px;
     min-height: 72px;
     margin-bottom: 16px;
-
     background: rgba(0, 0, 0, 0.1);
 }
 
@@ -1114,6 +1112,7 @@ body {
 .toggle-title {
     font-size: 18px;
     line-height: 150%;
+    transition: color 0.5s ease;
 }
 
 .toggle-icon {
@@ -1124,14 +1123,67 @@ body {
 .toggle-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: max-height 0.5s ease-out;
     margin-top: 10px;
 }
 
 .toggle-content.show {
-    max-height: 100px;
-    transition: max-height 0.3s ease-in;
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
 }
+
+.toggle-header.active .toggle-title {
+    color: #FF4060;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 1200px) {
+    .toggle-block {
+        width: 600px;
+    }
+}
+
+@media (max-width: 992px) {
+    .toggle-block {
+        width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .toggle-block {
+        width: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .toggle-block {
+        width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .toggle-block {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .faq__title h2 {
+        font-size: 24px;
+    }
+
+    .faq__title p {
+        font-size: 30px;
+    }
+
+    .toggle-title {
+        font-size: 16px;
+    }
+
+    .toggle-icon {
+        font-size: 30px;
+    }
+}
+
 /*faq-end*/
 
 /*community*/
