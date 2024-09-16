@@ -17,6 +17,40 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 /*HEADER-END*/
 
+/*SLIDER*/
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    breakpoints: {
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 15
+      },
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      576: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      560: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      300: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      }
+    }
+  });
+  
+/*SLIDER-END*/
+
 document.addEventListener('DOMContentLoaded', function() {
   const toggleHeaders = document.querySelectorAll('.toggle-header');
 
